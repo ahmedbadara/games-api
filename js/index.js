@@ -1,4 +1,4 @@
-import "git.sr.ht/~user/repo.git/path/to/module"
+
 import { GameService } from "./GameService.js";
 import { Display } from "./display.js";
 import { Filter } from "./filter.js";
