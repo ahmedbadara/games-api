@@ -1,0 +1,133 @@
+body {
+  font-family: "Nerko One", cursive;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #272b30;
+  color: white;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 30vh;
+  background-image: url(../images/wraper.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px 0px;
+}
+
+header nav {
+  background-color: #3a497b;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+              rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+              rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+header nav .nav-right ul li a {
+  color: white;
+  margin: 25px;
+  font-size: 18px;
+  transition: ease-in-out 0.5s;
+}
+
+header nav .nav-right ul li a:hover {
+  color: #09c !important;
+} 
+
+section .container .row .col-md-3 .item .card { 
+  filter: saturate(0%); 
+  transition: ease-in-out 0.5s;
+} 
+
+section .container .row .col-md-3 .item .card:hover { 
+  filter: saturate(100%); 
+  transform: scale(1.05) translateZ(0);
+}
+
+@media (max-width: 600px) {
+  header nav { 
+      width: 70% !important; 
+      padding: 50px 25px !important;
+  }   
+
+  header nav #navBtn { 
+      display: inline-block !important;  
+      position: absolute;
+      right: 0;
+  }
+
+  header nav .logo { 
+      margin-left: 35px; 
+      margin-top: 10px; 
+      width: 50%; 
+  }  
+
+  header nav .logo img {  
+      margin-right: 10px;
+  }
+
+  header nav .logo h1 { 
+      font-size: 25px !important;
+  }
+
+  header nav .nav-right ul li { 
+      display: none;
+  }
+}
+
+.item .card-img-top img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+/* Loading screen */
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+  display: none;
+}
+
+/* Modal styles */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1000; 
+  
+ 
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  
+}
+
+.modal-content {
+  background-color: #272b30;
+  
+  
+  
+  height: 100%;
+  width: 100%;
+  color: white;
+  border-radius: 10px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}

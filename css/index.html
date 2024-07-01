@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Reviews</title>
+  </head>
+  <body>
+    <div
+      id="loading"
+      class="loading d-flex justify-content-center align-items-center"
+    >
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+    <header class="mb-5 header position-relative d-flex justify-content-center">
+      <nav
+        class="position-absolute top-100 container d-flex justify-content-between align-items-center rounded-5 p-0 h-25"
+      >
+        <div
+          class="logo w-25 d-flex justify-content-center align-items-center p-sm-5"
+        >
+          <img src="images/logo-sm.png" class="w-25 p-lg-1" alt="logo" />
+          <h1 class="mt-lg-3 mt-md-3 h3">GAME REVIEWS</h1>
+        </div>
+        <button id="navBtn" class="btn btn-outline-dark end-0 d-none fs-4 m-5">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="nav-right">
+          <ul
+            class="ul d-flex my-1 text-capitalize justify-content-center align-items-center list-unstyled"
+            id="categoryNav"
+          >
+            <li>
+              <a
+                class="text-decoration-none fs-6"
+                href="#"
+                data-category="MMORPG"
+                >MMORPG</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-decoration-none fs-6"
+                href="#"
+                data-category="Shooter"
+                >Shooter</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-decoration-none fs-6"
+                href="#"
+                data-category="Sailing"
+                >Sailing</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-decoration-none fs-6"
+                href="#"
+                data-category="Permadeath"
+                >Permadeath</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-decoration-none fs-6"
+                href="#"
+                data-category="Superhero"
+                >Superhero</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-decoration-none fs-6"
+                href="#"
+                data-category="Pixel"
+                >Pixel</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="mt-5 py-5">
+      <div class="container">
+        <div class="row gy-sm-3" id="rowData"></div>
+      </div>
+    </section>
+    <div id="gameModal" class="modal w-100">
+      <div class="modal-content w-100">
+        <span class="w close position-absolute end-0 m-5"
+          ><i class="fa-solid fa-x"></i
+        ></span>
+        <div
+          id="gameDetails"
+          class="d-flex justify-content-start align-items-center"
+        ></div>
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="js/index.js"></script>
+  </body>
+</html>
