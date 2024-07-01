@@ -1,11 +1,14 @@
-export function displayGames(games) {
+export class Display {
+  constructor() {}
+
+  displayGames(games) {
     const row = document.getElementById("rowData");
     row.innerHTML = "";
     let cartoona = "";
     games.forEach((game) => {
       cartoona += `<div class="col-md-3">
               <div class="item">
-                  <div class="card bg-transparent" onclick="openModal(${game.id})">
+                  <div class="card bg-transparent" data-game-id="${game.id}">
                       <div class="card-img-top p-3">
                           <img src="${game.thumbnail}" alt="${game.title}" />
                       </div>
@@ -26,3 +29,4 @@ export function displayGames(games) {
     });
     row.innerHTML = cartoona;
   }
+}
