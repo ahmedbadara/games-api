@@ -1,8 +1,8 @@
 
-import { GameService } from "./js/GameService.js";
-import { Display } from "./js/Display.js";
-import { Filter } from "./js/Filter.js";
-import { Modal } from "./js/Modal.js";
+import { GameService } from "js/GameService.js";
+import { Display } from "js/Display.js";
+import { Filter } from "js/Filter.js";
+import { Modal } from "js/Modal.js";
 
 const url = "https://free-to-play-games-database.p.rapidapi.com/api/games";
 const options = {
